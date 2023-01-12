@@ -28,11 +28,11 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 let ctaPurchase
 if(params.ctaPurchase) ctaPurchase = params.ctaPurchase.toLowerCase();
 
-if(ctaPurchase === 'true'){
+if(!ctaPurchase){
     const purchaseContent = document.querySelectorAll(".js-cta-purchase");
     const templatePurchase = 
-    '<a href="https://pay.hotmart.com/D77065045R?bid=1672657946345" class="form__submit">Vivamus a vulpOtate!</a>' +
-    '<h1 class="paragraph paragraph--cta">Assina por apenas 17,49€ por mês!</h1>';
+    '<a href="https://pay.hotmart.com/D77065045R?bid=1672657946345" class="form__submit">Inscreve-te agora mesmo!</a>' +
+    '<h1 class="paragraph paragraph--cta">Assina por apenas 209,99€</h1>';
 
     changeLogo()
     purchaseContent.forEach(function(content) {
@@ -63,7 +63,6 @@ function changeLogo(){
     const logo = document.querySelector(".logo");
     logo.classList.remove('logo');
     logo.classList.add('logo-community');
-    console.log(logo)
 }
 
 // This code loads the IFrame Player API code asynchronously.
@@ -85,7 +84,7 @@ $("#js-header-video").click(function(){
             height: '100%',
             width: '100%',
             playerVars: { 'controls': 1, 'autohide': 1, autoplay: 1},
-            videoId: 'SkpRMlsVgsw',
+            videoId: '2nHLYN4tHhM',
             events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange

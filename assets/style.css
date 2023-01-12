@@ -42,7 +42,7 @@ html {
 
 .header {
     padding: 30px;
-    background-image: url('../assets/images/bg-header.jpg');
+    background-image: none;
     background-repeat: no-repeat;
     background-size: 100%;
     height: auto;
@@ -54,6 +54,7 @@ html {
     width: 335px;
     height: 200px;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .logo-community {
@@ -61,6 +62,7 @@ html {
     width: 335px;
     height: 200px;
     background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .heading {
@@ -187,6 +189,7 @@ html {
 
 .header__photo img{
     cursor: pointer;
+    max-width: 1060px;
 }
 
 .header-video-container {
@@ -336,6 +339,7 @@ html {
 
 .masonry-img {
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
     min-height: 170px;
@@ -646,6 +650,11 @@ html {
     .section-1 {
         position: relative;
     }
+
+    .header {
+        background-image: url('../assets/images/bg-header.jpg');
+    }
+
     .header-video-container {
         height: 742px;
     }
@@ -661,6 +670,11 @@ html {
         left: 0;
         bottom: -80px;
         right: 0;
+    }
+
+    .logo,
+    .logo-community {
+        margin: 0;
     }
 
     .section-products {
@@ -721,6 +735,10 @@ html {
     .single-first { grid-area: 4 / 1 / 5 / 2; }
     .single-second { grid-area: 4 / 2 / 5 / 3; }
     .single-third { grid-area: 4 / 3 / 5 / 4; }
+
+    .fifth img {
+        height: auto;
+    }
 
     .masonry-container--second {  
         display: grid;
@@ -840,6 +858,10 @@ html {
 
     .bounce {
         margin-left: 215px;
+    }
+
+    .fifth img {
+        max-height: 150px;
     }
 }
 
