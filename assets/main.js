@@ -31,7 +31,7 @@ if(params.ctaPurchase) ctaPurchase = params.ctaPurchase.toLowerCase();
 if(!ctaPurchase){
     const purchaseContent = document.querySelectorAll(".js-cta-purchase");
     const templatePurchase = 
-    '<a href="https://pay.hotmart.com/D77065045R?bid=1672657946345" class="form__submit">Inscreve-te agora mesmo!</a>' +
+    '<a href="https://go.hotmart.com/D77065045R" class="form__submit">Inscreve-te agora mesmo!</a>' +
     '<h1 class="paragraph paragraph--cta">Assina por apenas 209,99€</h1>';
 
     changeLogo()
