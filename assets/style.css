@@ -189,6 +189,7 @@ html {
 
 .header__photo img{
     cursor: pointer;
+    width: 100%;
     max-width: 1060px;
 }
 
