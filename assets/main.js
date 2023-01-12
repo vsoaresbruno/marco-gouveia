@@ -29,9 +29,10 @@ let ctaPurchase
 if(params.ctaPurchase) ctaPurchase = params.ctaPurchase.toLowerCase();
 
 if(!ctaPurchase){
+    const linkCheckout = 'https://pay.hotmart.com/D77065045R'
     const purchaseContent = document.querySelectorAll(".js-cta-purchase");
     const templatePurchase = 
-    '<a href="https://go.hotmart.com/D77065045R" class="form__submit">Inscreve-te agora mesmo!</a>' +
+    '<a href="'+ linkCheckout +'" class="form__submit">Inscreve-te agora mesmo!</a>' +
     '<h1 class="paragraph paragraph--cta">Assina por apenas 209,99€</h1>';
 
     changeLogo()
